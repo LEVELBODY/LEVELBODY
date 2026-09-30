@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050808" />
+  <meta name="description" content="LEVELBODY — coaching, schede, nutrizione e progressi in un unico spazio intelligente." />
+  <title>LEVELBODY — Allena. Monitora. Evolvi.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="cookie-ui.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="nav-wrap">
+    <nav class="nav container" aria-label="Navigazione principale">
+      <a class="brand" href="#top" aria-label="LEVELBODY home">
+        <img src="assets/logo.png" alt="" />
+        <span>LEVELBODY</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#features">Funzioni</a>
+        <a href="#modes">Modalità</a>
+        <a href="#ai">Copilota AI</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a class="button button-small desktop-cta" href="#access">Richiedi accesso <span>↗</span></a>
+      <button class="menu-button" id="menuButton" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="eyebrow reveal"><span class="live-dot"></span> Il nuovo standard del coaching</div>
+      <h1 class="reveal delay-1">Ogni progresso.<br /><span class="gradient-text">Sotto controllo.</span></h1>
+      <p class="hero-copy reveal delay-2">Allenamento, nutrizione e clienti in un unico spazio intelligente. Per coach che vogliono crescere e atleti che vogliono superarsi.</p>
+      <div class="hero-actions reveal delay-3">
+        <a class="button" href="#access">Inizia ora <span>↗</span></a>
+        <a class="text-link" href="#product"><span class="play">▶</span> Guarda come funziona</a>
+      </div>
+      <div class="trust reveal delay-3">
+        <div class="avatars" aria-label="Utenti">
+          <span>LM</span><span>AR</span><span>SB</span><span>+</span>
+        </div>
+        <div><strong>4.9/5</strong><small>Scelto da coach e atleti</small></div>
+      </div>
+
+      <div class="dashboard-shell reveal delay-4" id="product">
+        <div class="dash-top">
+          <div class="dash-brand"><img src="assets/logo.png" alt="" /><b>LEVELBODY</b></div>
+          <div class="dash-search">⌕ &nbsp; Cerca atleta...</div>
+          <div class="dash-user"><span class="status"></span><b>Marco</b><i>MC</i></div>
+        </div>
+        <div class="dash-layout">
+          <aside class="sidebar">
+            <span class="active">⌂ <em>Overview</em></span>
+            <span>♙ <em>Clienti</em></span>
+            <span>ϟ <em>Allenamenti</em></span>
+            <span>◉ <em>Nutrizione</em></span>
+            <span>⌁ <em>Progressi</em></span>
+            <span>✦ <em>Copilota AI</em></span>
+          </aside>
+          <div class="dash-main">
+            <div class="welcome"><div><small>LUNEDÌ, 29 SETTEMBRE</small><h3>Bentornato, Marco.</h3><p>Ecco come stanno andando i tuoi atleti.</p></div><button>＋ Nuovo programma</button></div>
+            <div class="stats-row">
+              <article><span>ATLETI ATTIVI</span><b>48</b><small class="up">↗ 12% questo mese</small></article>
+              <article><span>CHECK-IN OGGI</span><b>14</b><small>7 ancora da rivedere</small></article>
+              <article><span>COMPLIANCE MEDIA</span><b>91%</b><small class="up">↗ 4.2% vs agosto</small></article>
+              <article class="ai-stat"><span>AI INSIGHTS</span><b>06</b><small>Azioni suggerite</small></article>
+            </div>
+            <div class="dash-panels">
+              <article class="chart-card">
+                <div class="panel-head"><div><span>PERFORMANCE CLIENTI</span><b>Volume medio settimanale</b></div><select><option>Ultime 8 settimane</option></select></div>
+                <div class="chart-wrap">
+                  <div class="axis"><span>20k</span><span>15k</span><span>10k</span><span>5k</span></div>
+                  <svg viewBox="0 0 600 180" role="img" aria-label="Grafico performance in crescita" preserveAspectRatio="none">
+                    <defs><linearGradient id="area" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#02d8c7" stop-opacity=".32"/><stop offset="1" stop-color="#02d8c7" stop-opacity="0"/></linearGradient></defs>
+                    <path class="gridline" d="M0 25H600M0 70H600M0 115H600M0 160H600"/>
+                    <path class="area" d="M0 148 C45 130 60 142 95 115 S155 130 190 95 S250 118 290 79 S360 98 405 62 S470 72 510 43 S560 44 600 20 L600 180 L0 180Z"/>
+                    <path class="line" d="M0 148 C45 130 60 142 95 115 S155 130 190 95 S250 118 290 79 S360 98 405 62 S470 72 510 43 S560 44 600 20"/>
+                  </svg>
+                  <div class="chart-labels"><span>W1</span><span>W2</span><span>W3</span><span>W4</span><span>W5</span><span>W6</span><span>W7</span><span>W8</span></div>
+                </div>
+              </article>
+              <article class="activity-card">
+                <div class="panel-head"><div><span>ATTIVITÀ RECENTE</span><b>Da rivedere</b></div><small>Vedi tutto</small></div>
+                <div class="person"><i class="purple">GA</i><div><b>Giulia A.</b><span>Check-in completato</span></div><small>5m</small></div>
+                <div class="person"><i class="blue">LR</i><div><b>Luca R.</b><span>Nuovo record squat</span></div><small>18m</small></div>
+                <div class="person"><i class="orange">EM</i><div><b>Elena M.</b><span>Peso aggiornato</span></div><small>1h</small></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logos-section container">
+      <p>Tutto ciò che ti serve. Niente che ti rallenti.</p>
+      <div><span>PROGRAMMAZIONE</span><i></i><span>NUTRIZIONE</span><i></i><span>ANALYTICS</span><i></i><span>INTELLIGENZA ARTIFICIALE</span></div>
+    </section>
+
+    <section class="section container" id="features">
+      <div class="section-heading reveal">
+        <div><span class="section-kicker">01 — IL TUO NUOVO WORKSPACE</span><h2>Meno gestione.<br /><em>Più coaching.</em></h2></div>
+        <p>Un ecosistema completo progettato per farti risparmiare tempo e offrire un'esperienza superiore a ogni cliente.</p>
+      </div>
+      <div class="bento">
+        <article class="feature-card large reveal">
+          <div class="card-copy"><span class="feature-icon">ϟ</span><h3>Schede che si costruiscono con te.</h3><p>Crea programmi evoluti in pochi minuti. Progressioni, RPE, recuperi e video esercizi: tutto personalizzabile.</p></div>
+          <div class="workout-ui">
+            <div class="workout-head"><div><small>GIORNO 01</small><b>Lower Strength</b></div><span>•••</span></div>
+            <div class="exercise"><i>01</i><div><b>Back Squat</b><small>Bilanciere · Forza</small></div><span>4 × 6</span><em>RPE 8</em></div>
+            <div class="exercise"><i>02</i><div><b>Romanian Deadlift</b><small>Bilanciere · Posteriori</small></div><span>3 × 8</span><em>RPE 8</em></div>
+            <div class="exercise muted"><i>03</i><div><b>Bulgarian Split Squat</b><small>Manubri · Unilaterale</small></div><span>3 × 10</span><em>RPE 7</em></div>
+          </div>
+        </article>
+        <article class="feature-card reveal">
+          <div class="card-copy"><span class="feature-icon cyan">◉</span><h3>Nutrizione, senza congetture.</h3><p>Piani alimentari, macro e pasti flessibili che seguono davvero gli obiettivi.</p></div>
+          <div class="macro-ring"><div><b>2.340</b><small>kcal / giorno</small></div><span class="protein">P<b>180g</b></span><span class="carbs">C<b>260g</b></span><span class="fats">G<b>65g</b></span></div>
+        </article>
+        <article class="feature-card muscle-card reveal">
+          <div class="card-copy"><span class="feature-icon blue">⌁</span><h3>Ogni muscolo.<br />Ogni dato.</h3><p>Una mappa 3D mostra volume e frequenza per distretto muscolare.</p></div>
+          <div class="body-map body-map-screen" aria-label="Anteprima della mappa muscolare 3D">
+            <img src="assets/mappa-3d.png" alt="Mappa 3D frontale dei muscoli allenati, colorati in base al volume" />
+            <div class="screen-shine" aria-hidden="true"></div>
+          </div>
+        </article>
+        <article class="feature-card ai-card reveal" id="ai">
+          <div class="orb" aria-hidden="true"><span></span></div>
+          <div class="card-copy"><span class="feature-icon sparkle">✦</span><h3>Il tuo copilota.<br />Sempre un passo avanti.</h3><p>Analizza i dati, intercetta i plateau e suggerisce aggiustamenti. Tu decidi, LEVELBODY accelera.</p><a href="#access">Scopri LEVELBODY AI <b>→</b></a></div>
+          <div class="ai-message"><span>✦</span><p><b>Insight rilevato</b>Il volume lower body di Giulia è aumentato del 22%. Suggerisco una settimana di scarico.</p><button>Applica</button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section modes-section" id="modes">
+      <div class="container">
+        <div class="center-heading reveal"><span class="section-kicker">02 — UN'APP, DUE MODI DI CRESCERE</span><h2>Il controllo che ti serve.<br /><em>Nel modo che scegli.</em></h2></div>
+        <div class="mode-tabs reveal" role="tablist">
+          <button class="active" data-mode="coach" role="tab"><small>PER PROFESSIONISTI</small>Coach Mode</button>
+          <button data-mode="self" role="tab"><small>PER ATLETI</small>Self Coach</button>
+        </div>
+        <div class="mode-panel reveal" id="modePanel">
+          <div class="mode-copy">
+            <span class="mode-label">COACH MODE</span>
+            <h3>Il tuo business.<br />Una marcia in più.</h3>
+            <p>Gestisci più clienti, meglio. Automatizza il lavoro ripetitivo e dedica il tuo tempo a ciò che nessuna AI può sostituire: la relazione.</p>
+            <ul><li><i>✓</i> Dashboard clienti e check-in</li><li><i>✓</i> Programmi e diete riutilizzabili</li><li><i>✓</i> Report, progressi e messaggistica</li><li><i>✓</i> Branding e gestione team</li></ul>
+            <a class="button" href="#access">Scopri Coach Mode <span>↗</span></a>
+          </div>
+          <div class="phone-stage">
+            <div class="phone phone-back"><div class="phone-bar"></div><span>PROGRESSI</span><div class="mini-bars"><i style="height:38%"></i><i style="height:52%"></i><i style="height:45%"></i><i style="height:70%"></i><i style="height:88%"></i><i style="height:76%"></i></div><b>+12.4%</b><small>Volume totale</small></div>
+            <div class="phone"><div class="phone-bar"></div><div class="mobile-top"><img src="assets/logo.png" alt=""/><i>MC</i></div><small>BUONGIORNO, MARCO</small><h4>I tuoi atleti</h4><div class="client"><i class="purple">GA</i><div><b>Giulia Alberti</b><span>Check-in oggi</span></div><em>92%</em></div><div class="client"><i class="blue">LR</i><div><b>Luca Romano</b><span>Upper A · completato</span></div><em>88%</em></div><div class="client"><i class="orange">EM</i><div><b>Elena Moretti</b><span>Riposo</span></div><em>95%</em></div><button>＋ Aggiungi atleta</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section proof container">
+      <div class="quote-mark">“</div>
+      <blockquote>Prima gestivo 22 clienti ed ero al limite.<br />Oggi ne seguo 47, <em>e lavoro meglio.</em></blockquote>
+      <div class="quote-author"><span>FL</span><div><b>Francesco L.</b><small>Strength coach · Milano</small></div><div class="stars">★★★★★</div></div>
+    </section>
+
+    <section class="section container faq" id="faq">
+      <div class="faq-intro"><span class="section-kicker">03 — DOMANDE FREQUENTI</span><h2>Prima di<br /><em>iniziare.</em></h2><p>Le risposte essenziali per conoscere LEVELBODY e iniziare con consapevolezza.</p></div>
+      <div class="accordion">
+        <article class="open"><button><span><small>01</small>Posso usare LEVELBODY anche senza essere un coach?</span><i>＋</i></button><div><p>Sì. Con la modalità Self Coach hai tutti gli strumenti per creare allenamenti e diete, monitorare i progressi e usare la mappa muscolare 3D e il copilota AI in piena autonomia.</p></div></article>
+        <article><button><span><small>02</small>Posso importare i miei clienti e programmi?</span><i>＋</i></button><div><p>Certo. L'onboarding guidato ti aiuta a importare anagrafiche, schede e dati di partenza senza interrompere il tuo lavoro.</p></div></article>
+        <article><button><span><small>03</small>Il copilota AI sostituisce il coach?</span><i>＋</i></button><div><p>No. Analizza dati e suggerisce azioni, ma sei sempre tu ad avere il controllo. È progettato per ridurre il lavoro ripetitivo, non il valore umano.</p></div></article>
+        <article><button><span><small>04</small>Come funziona la prova gratuita?</span><i>＋</i></button><div><p>Puoi esplorare tutte le funzioni principali per 14 giorni, senza carta. Prima della scadenza scegli il piano adatto a te.</p></div></article>
+      </div>
+    </section>
+
+    <section class="cta-section" id="access">
+      <div class="cta-glow"></div>
+      <div class="container cta-inner reveal">
+        <img src="assets/logo.png" alt="Logo LEVELBODY" />
+        <span class="section-kicker">SEI PRONTO?</span>
+        <h2>Il prossimo livello<br />inizia <em>adesso.</em></h2>
+        <p>14 giorni gratuiti. Nessuna carta richiesta.</p>
+        <form id="waitlistForm"><input type="email" placeholder="La tua email professionale" aria-label="Email" required /><button class="button" type="submit">Richiedi accesso <span>↗</span></button></form>
+        <small id="formMessage">Unisciti a coach e atleti che stanno già costruendo il futuro.</small>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-top"><div class="footer-brand"><a class="brand" href="#top"><img src="assets/logo.png" alt=""/><span>LEVELBODY</span></a><p>Allena. Monitora. Evolvi.</p></div><div><b>Prodotto</b><a href="#features">Funzioni</a><a href="#modes">Coach Mode</a><a href="#modes">Self Coach</a><a href="#ai">LEVELBODY AI</a></div><div><b>Risorse</b><a href="#">Guide</a><a href="#">Blog</a><a href="#faq">Supporto</a><a href="#">Changelog</a></div><div><b>Seguici</b><a href="#">Instagram ↗</a><a href="#">LinkedIn ↗</a><a href="#">YouTube ↗</a></div></div>
+    <div class="container footer-bottom"><span>© 2026 LEVELBODY. Fatto con cura in Italia.</span><div><a href="privacy.html">Privacy</a><a href="termini.html">Termini</a><a href="cookie.html">Cookie</a><button class="cookie-settings-link" type="button" data-cookie-settings>Preferenze cookie</button></div><span class="system"><i></i> Tutti i sistemi operativi</span></div>
+  </footer>
+
+  <div class="cookie-banner" id="cookieBanner" role="dialog" aria-modal="true" aria-labelledby="cookieTitle" hidden>
+    <div class="cookie-copy">
+      <span class="section-kicker">LA TUA PRIVACY</span>
+      <h2 id="cookieTitle">Scegli tu cosa condividere.</h2>
+      <p>Usiamo strumenti necessari al funzionamento del sito. Quelli facoltativi vengono attivati soltanto con il tuo consenso. Puoi modificare la scelta in qualsiasi momento.</p>
+      <a href="cookie.html">Consulta la Cookie Policy</a>
+    </div>
+    <div class="cookie-options" id="cookieOptions" hidden>
+      <label><span><b>Necessari</b><small>Richiesti per sicurezza e preferenze.</small></span><input type="checkbox" checked disabled /></label>
+      <label><span><b>Analitici</b><small>Ci aiutano a capire come viene usato il sito.</small></span><input id="analyticsConsent" type="checkbox" /></label>
+      <label><span><b>Marketing</b><small>Contenuti e campagne personalizzate.</small></span><input id="marketingConsent" type="checkbox" /></label>
+    </div>
+    <div class="cookie-actions">
+      <button type="button" class="cookie-secondary" id="cookieCustomize">Personalizza</button>
+      <button type="button" class="cookie-secondary" id="cookieEssential">Solo necessari</button>
+      <button type="button" class="button" id="cookieAccept">Accetta tutti</button>
+      <button type="button" class="button" id="cookieSave" hidden>Salva preferenze</button>
+    </div>
+  </div>
+  <div class="cookie-backdrop" id="cookieBackdrop" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>
