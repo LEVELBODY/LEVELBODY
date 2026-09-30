@@ -54,14 +54,37 @@ document.querySelectorAll('.accordion article button').forEach(button => {
   });
 });
 
-document.getElementById('waitlistForm').addEventListener('submit', e => {
+document.getElementById('waitlistForm').addEventListener('submit', async e => {
   e.preventDefault();
-  const email = e.currentTarget.querySelector('input');
-  const button = e.currentTarget.querySelector('button');
-  button.textContent = 'Accesso richiesto ✓';
-  button.style.background = '#00d5c4';
-  document.getElementById('formMessage').textContent = 'Richiesta registrata. Riceverai le istruzioni per il prossimo passo.';
-  email.disabled = true;
+  const form = e.currentTarget;
+  const button = form.querySelector('button[type="submit"]');
+  const message = document.getElementById('formMessage');
+  const originalButton = button.innerHTML;
+
+  form.classList.add('is-sending');
+  button.textContent = 'Invio in corso…';
+  message.textContent = 'Stiamo inviando la tua candidatura in modo sicuro.';
+  message.className = '';
+
+  try {
+    const response = await fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (!response.ok) throw new Error('Invio non riuscito');
+
+    form.reset();
+    form.classList.remove('is-sending');
+    form.classList.add('is-success');
+    message.textContent = 'Candidatura inviata correttamente. Grazie per l’interesse in LEVELBODY!';
+    message.className = 'form-success';
+  } catch (error) {
+    form.classList.remove('is-sending');
+    button.innerHTML = originalButton;
+    message.textContent = 'Non è stato possibile inviare la candidatura. Riprova tra poco.';
+    message.className = 'form-error';
+  }
 });
 
 // Consent manager: optional categories remain disabled until explicit consent.

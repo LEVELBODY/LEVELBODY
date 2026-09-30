@@ -8,6 +8,7 @@
   <title>LEVELBODY — Allena. Monitora. Evolvi.</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="cookie-ui.css" />
+  <link rel="stylesheet" href="form.css" />
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
@@ -181,8 +182,24 @@
         <span class="section-kicker">SEI PRONTO?</span>
         <h2>Il prossimo livello<br />inizia <em>adesso.</em></h2>
         <p>14 giorni gratuiti. Nessuna carta richiesta.</p>
-        <form id="waitlistForm"><input type="email" placeholder="La tua email professionale" aria-label="Email" required /><button class="button" type="submit">Richiedi accesso <span>↗</span></button></form>
-        <small id="formMessage">Unisciti a coach e atleti che stanno già costruendo il futuro.</small>
+        <form id="waitlistForm" class="application-form" action="https://formspree.io/f/xzezwyyg" method="POST">
+          <input type="hidden" name="_subject" value="Nuova candidatura LEVELBODY" />
+          <input class="form-honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div class="form-row">
+            <input type="text" name="nome" placeholder="Nome e cognome" aria-label="Nome e cognome" autocomplete="name" required />
+            <input type="email" name="email" placeholder="La tua email" aria-label="Email" autocomplete="email" required />
+            <select name="profilo" aria-label="Profilo" required>
+              <option value="" disabled selected>Sei un...</option>
+              <option value="Coach">Coach</option>
+              <option value="Atleta Self Coach">Atleta Self Coach</option>
+              <option value="Centro fitness">Centro fitness</option>
+            </select>
+          </div>
+          <textarea name="messaggio" placeholder="Raccontaci brevemente cosa cerchi (facoltativo)" aria-label="Messaggio" rows="3"></textarea>
+          <label class="privacy-check"><input type="checkbox" name="privacy_accettata" value="Sì" required /><span>Ho letto la <a href="privacy.html" target="_blank">Privacy Policy</a> e acconsento al trattamento dei dati per la gestione della candidatura.</span></label>
+          <button class="button" type="submit">Invia candidatura <span>↗</span></button>
+        </form>
+        <small id="formMessage" role="status" aria-live="polite">Riceverai una conferma immediata dopo l’invio.</small>
       </div>
     </section>
   </main>
