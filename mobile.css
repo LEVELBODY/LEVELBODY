@@ -1,0 +1,71 @@
+/* Smartphone optimization — loaded after the main styles */
+@media (max-width:700px){
+  html{-webkit-text-size-adjust:100%;scroll-padding-top:72px}
+  body{overflow-x:hidden;-webkit-tap-highlight-color:rgba(0,213,196,.18)}
+  .container{width:calc(100% - 28px)}
+  .nav-wrap{background:rgba(5,8,8,.9)}
+  .nav{height:64px}
+  .brand{font-size:18px;letter-spacing:-.5px}.brand img{width:31px;height:31px}
+  .menu-button{width:44px;height:44px;padding:8px}.menu-button span{width:24px;margin:7px auto}
+  .nav-links{top:64px;padding:12px 14px 22px;gap:4px;background:#080d0d;box-shadow:0 24px 40px rgba(0,0,0,.5)}
+  .nav-links a{font-size:15px;padding:14px 10px;border-bottom:1px solid #182220}
+
+  .hero{padding-top:112px;min-height:auto}
+  .hero-glow{width:150vw;height:420px;top:30px}
+  .eyebrow{font-size:9px;letter-spacing:1px;padding:7px 10px}
+  .hero h1{font-size:clamp(46px,14.1vw,62px);line-height:.94;letter-spacing:-3px;margin:28px -4px 20px}
+  .hero-copy{font-size:14px;line-height:1.65;padding:0 3px}
+  .hero-actions{margin-top:26px;gap:16px}.hero-actions .button{width:100%;height:52px}.text-link{padding:8px}
+  .trust{margin:25px 0 35px}
+
+  /* The desktop analytics preview becomes a true stacked mobile dashboard. */
+  .dashboard-shell{width:100%;min-height:0;margin:0;border-radius:15px;transform:none;overflow:hidden}
+  .dash-top{height:52px;padding:0 12px}.dash-brand{width:auto}.dash-brand img{width:23px}.dash-brand b{font-size:12px}
+  .dash-search{display:none}.dash-user b,.dash-user .status{display:none}
+  .dash-layout{display:block}.sidebar{display:none}.dash-main{padding:17px 12px 14px}
+  .welcome{align-items:flex-start;gap:10px}.welcome h3{font-size:18px}.welcome p{font-size:9px}.welcome button{display:none}
+  .stats-row{grid-template-columns:1fr 1fr;gap:7px;margin:17px 0}.stats-row article{padding:11px;min-width:0}.stats-row b{font-size:21px;margin:7px 0 4px}.stats-row span{font-size:7px}.stats-row small{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .dash-panels{display:block}.chart-card{padding:12px}.activity-card{display:none}.panel-head select{display:none}.panel-head b{font-size:10px}
+  .chart-wrap{height:150px;padding-left:27px}.chart-labels{left:27px}
+
+  .section{padding-top:82px;padding-bottom:82px}
+  .section-heading{margin-bottom:38px}.section-heading h2,.center-heading h2,.faq h2{font-size:clamp(40px,12vw,50px);line-height:1.02;letter-spacing:-2.5px}
+  .section-heading>p{font-size:13px;line-height:1.65}
+  .section-kicker{font-size:9px}
+  .bento{display:block}.feature-card,.feature-card.large{display:block;border-radius:17px;padding:25px;min-height:0;margin-bottom:12px}.feature-card.large{min-height:0;padding-bottom:25px}
+  .card-copy{max-width:none}.card-copy h3{font-size:26px}.card-copy p{font-size:12px}.feature-icon{margin-bottom:20px}
+  .workout-ui{width:100%;margin:28px 0 0;padding:16px;transform:none;border-radius:11px}.workout-head b{font-size:15px}.exercise{grid-template-columns:20px minmax(0,1fr) 38px;padding:14px 0;gap:8px}.exercise div{min-width:0}.exercise b{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.exercise em{display:none}.exercise span{text-align:right;font-size:9px}
+  .feature-card:not(.large){min-height:480px}
+  .macro-ring{width:225px;height:225px;right:-10px;bottom:-22px}
+  .body-map-screen{width:205px;right:0;bottom:-18px}
+  .ai-card{min-height:535px}.orb{width:190px;height:190px;right:-55px}.ai-message{bottom:20px;padding:13px;gap:10px}.ai-message button{min-height:36px}
+
+  .mode-tabs{margin-top:32px}.mode-tabs button{min-height:62px;padding:12px;font-size:12px}
+  .mode-panel{border-radius:16px}.mode-copy{padding:31px 22px}.mode-copy h3{font-size:35px}.mode-copy p{font-size:12px}.mode-copy li{font-size:11px}.mode-copy .button{width:100%}
+  .phone-stage{height:455px;overflow:hidden}.phone{left:50%;top:28px;transform:translateX(-50%) scale(.82);transform-origin:top center}.phone-back{display:none}
+
+  .proof blockquote{font-size:31px;letter-spacing:-1.5px}.quote-author{flex-wrap:wrap}.quote-author .stars{width:100%;text-align:center;margin:8px 0 0}
+  .faq{gap:38px}.accordion button{min-height:70px;padding:20px 0}.accordion button span{line-height:1.4;padding-right:8px}.accordion article>div p{padding-right:15px}
+
+  .cta-section{min-height:720px;padding:70px 0}.cta-inner h2{font-size:clamp(45px,13vw,58px);letter-spacing:-3px}.cta-inner>p{line-height:1.5}
+  .application-form input,.application-form select,.application-form textarea{font-size:16px} /* prevents automatic iOS zoom */
+  .application-form .privacy-check{font-size:10px}.application-form .privacy-check input{width:18px;height:18px;min-width:18px}
+  .application-form>.button{min-height:52px}
+
+  .footer-top{padding-top:55px;padding-bottom:50px}.footer-bottom{line-height:1.6}
+  .footer-bottom a,.cookie-settings-link{display:inline-flex;min-height:32px;align-items:center}
+  .cookie-banner{border-radius:15px}.cookie-copy h2{font-size:22px}.cookie-actions button{min-height:46px}
+}
+
+@media (max-width:380px){
+  .hero h1{font-size:44px}
+  .logos-section div{font-size:9px}
+  .feature-card,.feature-card.large{padding:21px}
+  .workout-ui{padding:13px}.exercise{grid-template-columns:18px minmax(0,1fr) 34px;gap:6px}
+  .mode-copy h3{font-size:32px}
+  .footer-top{grid-template-columns:1fr}.footer-brand{grid-column:auto}.footer-top>div:last-child{display:flex}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.orb{animation:none}*{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}
+}
